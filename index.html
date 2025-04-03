@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Moeda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Conversor de Moeda</h1>
+    
+    <form id="currencyForm">
+      <input type="number" id="amount" placeholder="Valor" required>
+      
+      <select id="fromCurrency">
+        <option value="USD">USD (Dólar Americano)</option>
+        <option value="EUR">EUR (Euro)</option>
+        <option value="BRL">BRL (Real Brasileiro)</option>
+        <option value="GBP">GBP (Libra Esterlina)</option>
+        <option value="JPY">JPY (Iene Japonês)</option>
+        <option value="CAD">CAD (Dólar Canadense)</option>
+        <option value="AUD">AUD (Dólar Australiano)</option>
+        <option value="CHF">CHF (Franco Suíço)</option>
+        <option value="CNY">CNY (Yuan Chinês)</option>
+        <option value="SEK">SEK (Coroa Sueca)</option>
+        <option value="MXN">MXN (Peso Mexicano)</option>
+        <option value="INR">INR (Rúpia Indiana)</option>
+        <option value="RUB">RUB (Rublo Russo)</option>
+        </select>
+
+    <select id="toCurrency">
+        <option value="BRL">BRL (Real Brasileiro)</option>
+        <option value="USD">USD (Dólar Americano)</option>
+        <option value="EUR">EUR (Euro)</option>
+        <option value="GBP">GBP (Libra Esterlina)</option>
+        <option value="JPY">JPY (Iene Japonês)</option>
+        <option value="CAD">CAD (Dólar Canadense)</option>
+        <option value="AUD">AUD (Dólar Australiano)</option>
+        <option value="CHF">CHF (Franco Suíço)</option>
+        <option value="CNY">CNY (Yuan Chinês)</option>
+        <option value="SEK">SEK (Coroa Sueca)</option>
+        <option value="MXN">MXN (Peso Mexicano)</option>
+        <option value="INR">INR (Rúpia Indiana)</option>
+        <option value="RUB">RUB (Rublo Russo)</option>
+        </select>
+      
+      <button type="submit">Converter</button>
+    </form>
+    
+    <div id="conversionResult">
+      <p id="errorMessage"></p>
+      <p id="result"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
